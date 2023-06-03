@@ -6,6 +6,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Inter", sans-serif;
+  
 }
 *,
 *::before,
@@ -15,8 +16,8 @@
 
 /* ==== CSS VARIABLES ==== */
 :root {
-  --primary-color: #335eea;
-  --link-color: #506690;
+  --primary-color: deeppink;
+  --link-color: dimgrey;
   --btn-hover-color: #2b50c7;
   --lg-heading: #161c2d;
   --text-content: #869ab8;
@@ -28,7 +29,7 @@ body {
   width: 100%;
   height: 100vh;
   overflow-x: hidden;
-  background-color: #fafbfb;
+  background-color: aliceblue;
 }
 ul li {
   list-style-type: none;
@@ -45,6 +46,7 @@ button {
 /* ==== CONTAINER ==== */
 .container {
   width: 100%;
+  border: 1px solid dimgrey;
 }
 @media screen and (min-width: 1040px) {
   .container {
@@ -56,10 +58,12 @@ button {
 .header {
   height: var(--fixed-header-height);
   padding: 0 1.7rem;
+  border: 0px;
 }
 
 /* ==== NAV ==== */
 .nav {
+	
   width: 100%;
   height: 100%;
   display: flex;
@@ -69,7 +73,10 @@ button {
 /* ==== LOGO ==== */
 .logo h2 {
   font-size: 28px;
-  color: var(--primary-color);
+  color: dimgrey;
+}
+.fa-palette{
+	color: deeppink;
 }
 /* ====  NAV-MENU  ==== */
 .nav_menu_list {
@@ -122,23 +129,25 @@ button {
   padding-left: 1.5rem;
 }
 .main-heading {
+	color: dimgrey;
   font-weight: 300;
   font-size: 40px;
   line-height: 55px;
 }
 .main-heading span {
-  color: var(--primary-color);
+  color: deeppink;
 }
 .info-text {
   margin-top: 1.5rem;
   font-size: 19px;
   line-height: 28px;
-  color: #334157;
+      color: dimgrey;
 }
 .btn_wrapper {
   margin-top: 3.5rem;
   display: flex;
   width: 100%;
+  margin-bottom: 20px;
 }
 .btn {
   width: 110px;
@@ -154,7 +163,8 @@ button {
 }
 .btn:hover {
   transform: translateY(-3px);
-  background-color: var(--btn-hover-color);
+  background-color: dimgrey;
+  color: white;
 }
 .view_more_btn {
   width: 180px;
@@ -183,12 +193,13 @@ button {
   color: #fff;
   letter-spacing: 0;
   background-color: #e1e7fc;
-  color: #0e2a86;
+  color: deeppink;
   box-shadow: 0 0.5rem 1.5rem rgba(22, 28, 45, 0.1);
 }
 .documentation_btn:hover {
   background-color: #d7ddf1;
   transition: box-shadow 0.25s ease, transform 0.25s ease;
+  color:deeppink
 }
 .grid-item-2 {
   width: 100%;
@@ -223,7 +234,7 @@ button {
 .icon svg {
   width: 30px;
   height: 30px;
-  color: #6b85d8;
+  color: deeppink;
 }
 .featured_info {
   width: 100%;
@@ -233,7 +244,7 @@ button {
   display: block;
   font-size: 21px;
   line-height: 33px;
-  color: var(--lg-heading);
+  color: dimgrey;
 }
 .featured_info p {
   display: block;
